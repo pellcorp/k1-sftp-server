@@ -21,5 +21,5 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 Clone the repo
 
-1. `git clonehttps://github.com/pellcorp/k1-bash && cd k1-bash`
+1. `git clonehttps://github.com/pellcorp/k1-sftp-server && cd k1-sftp-server`
 2. `docker run -ti -v $PWD:$PWD pellcorp/k1-bash-build $PWD/build.sh`

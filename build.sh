@@ -43,4 +43,5 @@ cd openssh-9.8p1
 
 make -j"$(nproc)" sftp-server
 ${STRIP} sftp-server
-tar-czf $CURRENT_DIR/build/sftp-server.tar.gz sftp-server
+tar -zcf $CURRENT_DIR/build/sftp-server.tar.gz sftp-server
+
