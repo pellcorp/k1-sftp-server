@@ -31,12 +31,9 @@ export LDFLAGS="-Wl,-EL -Wl,-m,elf32ltsmip -Wl,--gc-sections \
   -Wl,-rpath-link,${SYSROOT}/lib -Wl,-rpath-link,${SYSROOT}${PREFIX}/lib \
   -Wl,--dynamic-linker=/lib/ld-linux-mipsn8.so.1"
 
-# get OpenSSH portable source (use your preferred mirror/tarball)
-# unpack to ./openssh-portable
 tar -zxf ../openssh-9.8p1.tar.gz
 cd openssh-9.8p1
 
-# configure for cross (this will probe lots of things, that’s fine)
 ./configure \
   --host="${CROSS%-}" \
   --build="$(gcc -dumpmachine)" \
